@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/images/flags/voyages-BG.jpg") no-repeat center center fixed ;
+  background-size: cover;
+  /*opacity: 1;*/
+  /*z-index: -3;*/
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 auto 1vw auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+h1 > img {
+  margin-left: 1vw;
+  /*position: relative;*/
+  top: 1vw;
+  left: 1vw;
+}
+
+ h2, h3 {
+  color: #1b1a1a;
+  padding-left: 1vw;
+}
+
+p{
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: justify;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  padding: 1vw;
+  text-align: center;
+}
+
+nav ul.menu {
+  list-style: none;
+  padding: 1vw;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background: #444;
+  /* gap: 30px; */
+}
+
+nav ul.menu > li {
+  position: relative;
+  padding: 1vw 0px;
+  color: white;
+}
+
+nav ul.submenu {
+  display: none;
+  width: 200px;
+  /* display:block; */
+  position: absolute;
+  background: #666;
+  list-style: none;
+  /* padding: 20px 10px;  */
+  padding: 2vw 1vw 2vw 1vw;
+  margin: 0;
+}
+
+nav ul.submenu {
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav ul.menu li:hover ul.submenu {
+  display: block;
+}
+
+.submenu li {
+  text-align: start;
+  padding: 1vw 0;
+  border-bottom: 1px solid #888;
+}
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu li:hover {
+  background: #555;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 2vw;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: green;
+}
+
+article {
+  border: 1px solid #ccc;
+  padding: 1vw;
+  /*width: 25%;*/
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+article p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+article img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/*.section-mehdi,.section-achraf, .section-dylan {
+  width: 20vw;
+}*/
+
+.section-mehdi article, .section-achraf article, .section-dylan article {
+  margin-bottom: 1vw;
+  text-align: center;
+  width: 20vw;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1vw;
+  margin: 1vw;
+
+}
